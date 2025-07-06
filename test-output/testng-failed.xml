@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.DatePickerTest">
+      <class name="test.FileUploadTest">
         <methods>
           <include name="openurl"/>
-          <include name="datepickUsingCalendar"/>
-          <include name="close"/>
+          <include name="multifileupload"/>
         </methods>
-      </class> <!-- test.DatePickerTest -->
+      </class> <!-- test.FileUploadTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-04T22:56:36 IST" name="Default suite" finished-at="2025-07-04T22:56:43 IST" duration-ms="7383">
+  <suite started-at="2025-07-06T22:01:11 IST" name="Default suite" finished-at="2025-07-06T22:01:17 IST" duration-ms="6460">
     <groups>
     </groups>
-    <test started-at="2025-07-04T22:56:36 IST" name="Default test" finished-at="2025-07-04T22:56:43 IST" duration-ms="7383">
-      <class name="test.DatePickerTest">
-        <test-method is-config="true" signature="openurl()[pri:0, instance:test.DatePickerTest@74fe5c40]" started-at="2025-07-04T22:56:36 IST" name="openurl" finished-at="2025-07-04T22:56:43 IST" duration-ms="6737" status="PASS">
+    <test started-at="2025-07-06T22:01:11 IST" name="Default test" finished-at="2025-07-06T22:01:17 IST" duration-ms="6460">
+      <class name="test.FileUploadTest">
+        <test-method is-config="true" signature="openurl()[pri:0, instance:test.FileUploadTest@436813f3]" started-at="2025-07-06T22:01:11 IST" name="openurl" finished-at="2025-07-06T22:01:17 IST" duration-ms="6368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openurl -->
-        <test-method signature="datepickWithSendKeys()[pri:1, instance:test.DatePickerTest@74fe5c40]" started-at="2025-07-04T22:56:43 IST" name="datepickWithSendKeys" finished-at="2025-07-04T22:56:43 IST" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datepickWithSendKeys -->
-        <test-method signature="datepickUsingCalendar()[pri:2, instance:test.DatePickerTest@74fe5c40]" started-at="2025-07-04T22:56:43 IST" name="datepickUsingCalendar" finished-at="2025-07-04T22:56:43 IST" duration-ms="248" status="FAIL">
-          <exception class="java.time.format.DateTimeParseException">
+        <test-method signature="multifileupload()[pri:2, instance:test.FileUploadTest@436813f3]" started-at="2025-07-06T22:01:17 IST" name="multifileupload" finished-at="2025-07-06T22:01:17 IST" duration-ms="49" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
             <message>
-              <![CDATA[Text '0701  2025' could not be parsed, unparsed text found at index 2]]>
+              <![CDATA[invalid argument
+  (Session info: chrome=138.0.7204.50)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8887aeec70c0e483890f15fe6cf087e, clickElement {id=f.244DB4930C3E7CA4939B13A4477EA88D.d.D53E02F1735B440072CE8FCDE7A5495E.e.81}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63059/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b8887aeec70c0e483890f15fe6cf087e)] -> xpath: //input[@id='multipleFilesInput']]
+Session ID: b8887aeec70c0e483890f15fe6cf087e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.time.format.DateTimeParseException: Text '0701  2025' could not be parsed, unparsed text found at index 2
-at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2111)
-at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010)
-at java.base/java.time.LocalDate.parse(LocalDate.java:435)
-at pages.DatePicker.isMonthAfter(DatePicker.java:71)
-at pages.DatePicker.datepicker_1(DatePicker.java:54)
-at test.DatePickerTest.datepickUsingCalendar(DatePickerTest.java:27)
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=138.0.7204.50)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8887aeec70c0e483890f15fe6cf087e, clickElement {id=f.244DB4930C3E7CA4939B13A4477EA88D.d.D53E02F1735B440072CE8FCDE7A5495E.e.81}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.50, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63059/devtoo..., se:cdpVersion: 138.0.7204.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b8887aeec70c0e483890f15fe6cf087e)] -> xpath: //input[@id='multipleFilesInput']]
+Session ID: b8887aeec70c0e483890f15fe6cf087e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+at pages.FileUpload.uploadmultifile(FileUpload.java:54)
+at test.FileUploadTest.multifileupload(FileUploadTest.java:30)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -56,15 +80,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.time.format.DateTimeParseException -->
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datepickUsingCalendar -->
-        <test-method is-config="true" signature="close()[pri:0, instance:test.DatePickerTest@74fe5c40]" started-at="2025-07-04T22:56:43 IST" name="close" finished-at="2025-07-04T22:56:43 IST" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- test.DatePickerTest -->
+        </test-method> <!-- multifileupload -->
+      </class> <!-- test.FileUploadTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
