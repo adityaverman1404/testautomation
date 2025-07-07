@@ -19,21 +19,18 @@ public class FileUploadTest extends BaseLiberary {
 		fileupload = new FileUpload();
 	}
 
-	//@Test(priority=1)
+	// @Test(priority=1)
 	public void singlefilefileupload() {
 		fileupload.choosefileclick();
 	}
-	
-	
-	@Test(priority=2)
+
+	@Test(priority = 2)
 	public void multifileupload() throws AWTException, InterruptedException {
 		fileupload.uploadmultifile();
-		
-	}
-	
-	
 
-	//@AfterTest
+	}
+
+	// @AfterTest
 	public void close() {
 		closeurl();
 
